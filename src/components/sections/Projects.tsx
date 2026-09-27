@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,8 +18,19 @@ export function ProjectsSection() {
       <Stagger className="grid gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <Reveal key={project.slug}>
-            <Card className="h-full">
-              <CardContent className="flex h-full flex-col">
+            <Card className="h-full gap-0 overflow-hidden py-0">
+              {project.image && (
+                <div className="relative aspect-video w-full overflow-hidden border-b bg-muted">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              )}
+              <CardContent className="flex h-full flex-col p-4">
                 <p className="mb-1 text-xs text-accent">
                   {project.type} · {project.year}
                 </p>

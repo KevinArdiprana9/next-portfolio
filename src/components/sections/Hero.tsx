@@ -20,7 +20,7 @@ export function HeroSection() {
               <h1 className="font-display text-3xl leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
                 Hi, I&apos;m Kevin.
                 <span className="block italic text-muted-foreground">
-                  I build useful things on the web and in your pocket.
+                  I build useful things on the web
                 </span>
               </h1>
             </Reveal>
@@ -28,7 +28,7 @@ export function HeroSection() {
             <Reveal>
               <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:mx-0 sm:text-lg">
                 Informatics graduate from Atma Jaya Yogyakarta University,
-                focused on fullstack web and mobile development. I like turning
+                focused on fullstack web development. I like turning
                 rough ideas into products people can actually use.
               </p>
             </Reveal>
@@ -59,7 +59,7 @@ export function HeroSection() {
                   fill
                   priority
                   sizes="(max-width: 640px) 208px, (max-width: 1024px) 256px, 288px"
-                  className="object-cover"
+                  className="object-cover object-[center_20%]"
                 />
               </div>
             </div>

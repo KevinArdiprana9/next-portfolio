@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Inter, Fraunces, Geist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -13,9 +14,40 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
 });
 
-export const metadata = {
-  title: "Kevin Ardiprana - Fullstack & Mobile Developer",
-  description: "Portofolio Kevin Ardiprana.",
+const title = "Kevin Ardiprana - Fullstack Developer";
+const description =
+  "Portfolio Kevin Ardiprana, Informatics graduate from Atma Jaya Yogyakarta University, focused on fullstack web development.";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://kevin-ardiprana.vercel.app"),
+  title: {
+    default: title,
+    template: "%s | Kevin Ardiprana",
+  },
+  description,
+  keywords: [
+    "Kevin Ardiprana",
+    "Fullstack Developer",
+    "Web Developer",
+    "React",
+    "Next.js",
+    "Laravel",
+    "Portfolio",
+  ],
+  authors: [{ name: "Kevin Ardiprana" }],
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Kevin Ardiprana Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

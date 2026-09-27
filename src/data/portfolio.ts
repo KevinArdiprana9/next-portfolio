@@ -11,15 +11,6 @@ export type SkillGroup = {
   items: string[];
 };
 
-export type Project = {
-  name: string;
-  stack: string;
-  description: string;
-  tags: string[];
-  href: string;
-  image: string;
-};
-
 export type ContactLink = {
   label: string;
   value: string;
@@ -81,8 +72,8 @@ export const skillGroups: SkillGroup[] = [
     items: ["Java", "C", "PHP", "TypeScript", "JavaScript"],
   },
   {
-    label: "Frontend & Mobile",
-    items: ["React", "Next.js", "HTML / CSS", "Tailwind CSS", "Flutter"],
+    label: "Frontend",
+    items: ["React", "Next.js", "HTML / CSS", "Tailwind CSS"],
   },
   {
     label: "Backend & Tools",
@@ -93,6 +84,7 @@ export const skillGroups: SkillGroup[] = [
       "PostgreSQL",
       "REST APIs",
       "Git & GitHub",
+      "Docker",
     ],
   },
 ];

@@ -9,7 +9,7 @@ export function ContactSection() {
       id="contact"
       eyebrow="Get in touch"
       title="Let's talk"
-      subtitle="Open to full-time roles, internships, or just a chat about web and mobile dev. Reach out through any of these."
+      subtitle="Open to full-time roles, internships, or just a chat about web dev. Reach out through any of these."
     >
       <Stagger className="grid gap-4 sm:grid-cols-2">
         {contactLinks.map((link) => {
