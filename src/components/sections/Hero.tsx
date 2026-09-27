@@ -39,11 +39,11 @@ export function HeroSection() {
                   <Link href="#projects">See my work</Link>
                 </Button>
 
-                {/* <Button asChild variant="outline" size="lg">
-                  <a href="/cv.pdf" download>
+                <Button asChild variant="outline" size="lg">
+                  <a href="/docs/KevinArdiprana-resume.pdf" download>
                     Download CV
                   </a>
-                </Button> */}
+                </Button>
               </div>
             </Reveal>
           </div>
